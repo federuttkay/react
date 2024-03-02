@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Button from "../Button";
 import Link from "./Link";
 import "./LinkInput.css";
 
 const LinkInput = () => {
+	const inputRef = useRef<HTMLInputElement>(null);
 	const getShortURL = async (urlInput: string) => {
 		const url = new URL("https://t.ly/api/v1/link/shorten");
 
@@ -72,8 +73,11 @@ const LinkInput = () => {
 
 		const shortURL = await getShortURL(longURL);
 
-		if (typeof shortURL === "string")
+		if (typeof shortURL === "string") {
 			setAllLinks([{ longUrl: longURL, shortUrl: shortURL }, ...allLinks]);
+		}
+
+		if (inputRef.current) inputRef.current.value = "";
 	};
 
 	return (
@@ -90,6 +94,7 @@ const LinkInput = () => {
 							placeholder="Shorten a link here..."
 							name="longURL"
 							onChange={() => setLinkError(false)}
+							ref={inputRef}
 						/>
 						<p className="error-p">Please add a link</p>
 					</div>
