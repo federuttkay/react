@@ -1,0 +1,44 @@
+.boost {
+	background-color: var(--dark-violet);
+	background-image: url("../../assets/images/bg-boost-mobile.svg");
+	background-size: 100%;
+	margin-top: 5rem;
+	height: 18.75rem;
+	place-items: center;
+}
+
+.boost__content {
+	gap: 1rem;
+}
+
+.boost__title {
+	color: white;
+	font-size: 1.65rem;
+}
+
+.boost .btn {
+	font-size: 1.25rem;
+	font-weight: 500;
+	padding: 0.7em 2em;
+	width: max-content;
+	margin-inline: auto;
+}
+
+@media screen and (width > 800px) {
+	.boost {
+		background-image: url("../../assets/images/bg-boost-desktop.svg");
+		background-size: cover;
+		background-position: center;
+		margin-top: 13.5rem;
+		height: 15.75rem;
+	}
+	.boost__content {
+		gap: 1.5rem;
+	}
+	.boost__title {
+		font-size: 2.37rem;
+	}
+	.boost .btn:hover {
+		background-color: var(--cyan-light);
+	}
+}

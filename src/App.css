@@ -1,0 +1,98 @@
+:root {
+	--cyan: hsl(180, 66%, 49%);
+	--cyan-light: hsl(180, 66%, 75%);
+	--dark-violet: hsl(257, 27%, 26%);
+	--dark-violet-line: hsl(257, 20%, 34%);
+	--red: hsl(0, 87%, 67%);
+	--red-soft: hsl(0, 87%, 87%);
+	--gray: hsl(0, 0%, 75%);
+	--gray-line: hsl(0, 0%, 88%);
+	--grayish-violet: hsl(257, 7%, 63%);
+	--very-dark-blue: hsl(255, 11%, 22%);
+	--very-dark-violet: hsl(260, 8%, 14%);
+	--violet-background: hsl(240, 30%, 95%);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1.125rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	margin-inline: auto;
+	color: var(--very-dark-violet);
+	overflow-x: hidden;
+}
+.body__main {
+	margin-inline: auto;
+	max-width: 1200px;
+	padding-inline: 1.5rem;
+}
+.body__footer {
+	background-color: var(--very-dark-violet);
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.grid {
+	display: grid;
+}
+
+.modal {
+	border-radius: 0.5rem;
+	margin: auto 1rem;
+	padding: 2rem;
+	max-width: 1000px;
+}
+
+.modal::backdrop {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal__content {
+	gap: 1rem;
+}
+
+.modal button {
+	display: block;
+	margin-inline: auto;
+	margin-top: 3rem;
+}
+
+.modal a {
+	outline: 0;
+	color: var(--cyan);
+	margin-inline-start: 2rem;
+}
+
+.modal p:first-child {
+	margin-bottom: 1.25rem;
+}
+
+@media screen and (width > calc(1000px + 2rem)) {
+	.modal {
+		margin: auto;
+	}
+}

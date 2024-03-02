@@ -1,0 +1,38 @@
+.card {
+	position: relative;
+	background-color: white;
+	border-radius: 0.5rem;
+	padding: 2rem;
+}
+
+.card__img {
+	width: 90px;
+	aspect-ratio: 1;
+	background-color: var(--dark-violet);
+	border-radius: 100%;
+	padding: 25px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card__title {
+	margin-block: 2.75rem 1.1rem;
+}
+
+.card__info {
+	color: var(--grayish-violet);
+	font-size: 0.95rem;
+	font-weight: 4;
+}
+
+@media screen and (width > 800px) {
+	.card {
+		text-align: start;
+	}
+	.card__img {
+		left: initial;
+		transform: translate(0, -50%);
+	}
+}

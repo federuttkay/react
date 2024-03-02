@@ -1,0 +1,34 @@
+.btn {
+	font-family: inherit;
+	font-size: 1.125rem;
+	font-weight: 700;
+	outline: 0;
+	border: 0;
+	padding: 0.55em 1.5em;
+	border-radius: 100vw;
+	background-color: transparent;
+	color: white;
+}
+
+.btn-secondary {
+	background-color: var(--cyan);
+}
+
+.btn-square {
+	border-radius: 0.35rem;
+	font-weight: 600;
+}
+
+@media screen and (width > 800px) {
+	.btn {
+		font-size: 0.95rem;
+		color: var(--grayish-violet);
+	}
+	.btn-secondary {
+		color: white;
+	}
+	.btn-square {
+		border-radius: 0.5rem;
+		font-size: 1.25rem;
+	}
+}
