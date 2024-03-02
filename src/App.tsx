@@ -25,9 +25,9 @@ function App() {
 			<dialog ref={modalRef} className="modal">
 				<div className="modal__content grid">
 					<p>
-						Esta página ha sido hecha usando React a modo de ejemplo para
-						escritorio y móbil, y cuenta con implementaciones que no serían
-						correctas en una etapa de producción. Se destaca:
+						Esta página ha sido hecha usando React + Typescript a modo de
+						ejemplo para escritorio y móbil, y cuenta con implementaciones que
+						no serían correctas en una etapa de producción. Se destaca:
 					</p>
 					<p>
 						- La única funcionabilidad implementada es la de los botones

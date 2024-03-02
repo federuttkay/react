@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+## Esta página ha sido hecha usando React + Typescript a modo de ejemplo para escritorio y móbil, y cuenta con implementaciones que no serían correctas en una etapa de producción. Se destaca:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- La única funcionabilidad implementada es la de los botones "Shorten it!" y
+  "Copy".
 
-Currently, two official plugins are available:
+- Por defecto se cargan tres resultados (ejemplo1-3) para que se vea con más
+  contenido desde un inicio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- La API que devuelve la URL corta puede que no funcione correctamente por
+  haberse vencido la llave o el permiso de usuario de prueba. En este caso
+  devuelve el error de la misma manera que lo haría con la URL corta para que se
+  pueda usar la funcionabilidad del "Copy" y mostrar como se van agregando las
+  líneas. Esto en producción sería claramente distinto.
 
-## Expanding the ESLint configuration
+- Los modelos que se reproducen se pueden ver el modal que se muestra en la
+  página.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Federico Ruttkay.
