@@ -48,7 +48,7 @@ function App() {
 					<p>
 						- Los modelos que se reproducen se pueden ver en:
 						<a href={mobilePhoto} download={mobilePhoto}>
-							Móbil
+							Móvil
 						</a>
 						<a href={mobilePhoto} download={desktopPhoto}>
 							Escritorio
