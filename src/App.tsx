@@ -50,7 +50,7 @@ function App() {
 						<a href={mobilePhoto} download={mobilePhoto}>
 							Móvil
 						</a>
-						<a href={mobilePhoto} download={desktopPhoto}>
+						<a href={desktopPhoto} download={desktopPhoto}>
 							Escritorio
 						</a>
 					</p>
