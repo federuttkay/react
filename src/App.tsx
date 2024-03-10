@@ -26,7 +26,7 @@ function App() {
 				<div className="modal__content grid">
 					<p>
 						Esta página ha sido hecha usando React + Typescript a modo de
-						ejemplo para escritorio y móbil, y cuenta con implementaciones que
+						ejemplo para escritorio y móvil, y cuenta con implementaciones que
 						no serían correctas en una etapa de producción. Se destaca:
 					</p>
 					<p>
