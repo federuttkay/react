@@ -51,6 +51,8 @@
 	/* overflow: hidden; */
 	position: relative;
 	min-height: 200px;
+	overflow-clip-margin: 1.5rem;
+	overflow: clip;
 }
 .banner__image img {
 	position: relative;
@@ -77,9 +79,9 @@
 	.banner__p {
 		font-size: 1.35rem;
 	}
-	/* .banner__image {
-		max-width: none;
-	} */
+	.banner__image {
+		overflow: visible;
+	}
 	.banner__image img {
 		position: absolute;
 		width: 160%;
