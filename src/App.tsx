@@ -47,10 +47,10 @@ function App() {
 					</p>
 					<p>
 						- Los modelos que se reproducen se pueden ver en:
-						<a href={mobilePhoto} download={mobilePhoto}>
+						<a href={mobilePhoto} download="mobile-active-states.jpg">
 							Móvil
 						</a>
-						<a href={desktopPhoto} download={desktopPhoto}>
+						<a href={desktopPhoto} download="desktop-active-states.jpg">
 							Escritorio
 						</a>
 					</p>
